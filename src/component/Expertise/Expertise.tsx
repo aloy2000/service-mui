@@ -49,7 +49,7 @@ export const Expertise = () => {
           alignItems: "center",
           justifyContent: "center",
           fontWeight: "bold",
-          marginTop: 5
+          marginTop: 5,
         }}
       >
         Nos differents domaines d'intervention

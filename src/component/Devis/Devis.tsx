@@ -38,7 +38,7 @@ const Devis = () => {
           <Grid item md={3} sm={4} sx={{ mt: 8 }}>
             <ReactPlayer
               url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
-              width={'100%'}
+              width={"100%"}
               height={200}
             />
           </Grid>

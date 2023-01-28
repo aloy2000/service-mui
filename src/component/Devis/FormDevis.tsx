@@ -19,9 +19,9 @@ const FormDevis = () => {
   const [check, setCheck] = React.useState<string>("off");
   const [problem, setProblem] = React.useState<string>();
 
-  const handleSubmit=() => {
+  const handleSubmit = () => {
     //do something
-  }
+  };
 
   return (
     <>
@@ -90,7 +90,7 @@ const FormDevis = () => {
               <Grid item xs={12}>
                 <TextareaAutosize
                   value={problem}
-                  onChange={(e) => setProblem(e.target.value)}  
+                  onChange={(e) => setProblem(e.target.value)}
                   placeholder="Decrire ici..."
                   style={{ width: "100%", height: "100px" }}
                 />
@@ -98,7 +98,11 @@ const FormDevis = () => {
               <Grid item xs={12}>
                 <FormControlLabel
                   control={
-                    <Checkbox value="allowExtraEmails" color="primary"  onChange={(e) => setCheck(e.target.value)}/>
+                    <Checkbox
+                      value="allowExtraEmails"
+                      color="primary"
+                      onChange={(e) => setCheck(e.target.value)}
+                    />
                   }
                   label="Rappelez."
                 />
