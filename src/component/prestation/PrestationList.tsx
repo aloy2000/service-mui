@@ -9,30 +9,32 @@ const PrestationList = () => {
             variant="h4"
             gutterBottom
 
-            >Title 
+            >Plomberie 
         </Typography>
 
         <Typography 
             variant="body2"
             gutterBottom
             component="p"
-            >Lorem   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Dignissimos possimus repudiandae minima distinctio repellendus quae eius,
+            >La plomberie n'a aucun secret pour nous, quelque soit la presation demandée, nous nous en occupons 
+            avec précision et professionnalisme. Vous serez satisfaits de notre travail en un rien de temps et nous vous 
+            garantissons un travail plus que parfait.
         </Typography>
         <div style={{marginTop: '40px'}}>
             <Typography 
                 variant="h6"
                 gutterBottom
 
-                >SubTitle 
+                >
+                    Domaines d'intervention 
             </Typography>
 
             <Typography 
                 variant="body2"
                 gutterBottom
                 component="p"
-                >Lorem   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Dignissimos possimus repudiandae minima distinctio repellendus quae eius,
+                >Nous exécutons tout travaux dans le domaine de plomberie, parmi ces travaux, voici un tableau contenant les services
+                 et les domaines que nous prenons en charge 
             </Typography>
         </div>
 

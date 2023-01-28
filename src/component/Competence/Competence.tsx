@@ -62,7 +62,7 @@ const Competence = () => {
                           justifyContent: "center",
                         }}
                       >
-                        Lizard
+                        Plomberie
                       </Typography>
                     </CardContent>
                     <CardActions

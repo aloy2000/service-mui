@@ -34,11 +34,11 @@ function createData(name?: string, calories?:number, fat?:number, carbs?:number,
 }
 
 const rows = [
-  createData('Frozen yoghurt', 159),
-  createData('Ice cream sandwich', 237),
-  createData('Eclair', 262),
-  createData('Cupcake', 3),
-  createData('Gingerbread', 356)
+  createData('Tuyauterie', 159),
+  createData('Robinets', 237),
+  createData('Baignoire', 262),
+  createData('Toilettes', 3),
+  createData('Chauffe-eau', 356)
 ];
 
 export default function TablePrestation() {
@@ -47,8 +47,8 @@ export default function TablePrestation() {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Nos prestations de serrurerie</StyledTableCell>
-            <StyledTableCell>Type de dépannage de serrurerie</StyledTableCell>
+            <StyledTableCell>Nos prestations de plomberie</StyledTableCell>
+            <StyledTableCell>Type de dépannage de plomberie</StyledTableCell>
            
           </TableRow>
         </TableHead>

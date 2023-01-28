@@ -43,7 +43,7 @@ const FormDevis = () => {
                   required
                   fullWidth
                   id="name"
-                  label="Nom et prenom"
+                  label="Nom et prénom"
                   autoFocus
                   value={name}
                   onChange={(e) => {
@@ -91,7 +91,7 @@ const FormDevis = () => {
                 <TextareaAutosize
                   value={problem}
                   onChange={(e) => setProblem(e.target.value)}  
-                  placeholder="Decrire ici..."
+                  placeholder="Décrire ici..."
                   style={{ width: "100%", height: "100px" }}
                 />
               </Grid>
@@ -100,7 +100,7 @@ const FormDevis = () => {
                   control={
                     <Checkbox value="allowExtraEmails" color="primary"  onChange={(e) => setCheck(e.target.value)}/>
                   }
-                  label="Rappelez."
+                  label="Être rappelé immédiatement."
                 />
               </Grid>
             </Grid>

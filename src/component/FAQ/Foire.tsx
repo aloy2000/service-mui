@@ -17,7 +17,7 @@ const Foire = () => {
                     fontWeight:'bold'
                 }}
 
-            >Foire Au Question 
+            >Foire Aux Questions 
             </Typography>
             {questions.map(question => (
                 <div key={question} style={{marginBottom : '10px'}}>

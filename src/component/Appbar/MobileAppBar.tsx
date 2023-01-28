@@ -76,7 +76,7 @@ const MobileAppBar = () => {
                     >
                     
                         <MenuItem  onClick={handleCloseNavMenu}>
-                        <Typography textAlign="center" onClick={goHome} >Home</Typography>
+                        <Typography textAlign="center" onClick={goHome} >Accueil</Typography>
                         </MenuItem>
                         <MenuItem  onClick={handleCloseNavMenu}>
                         <Typography textAlign="center" >Services</Typography>

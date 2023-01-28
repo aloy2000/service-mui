@@ -37,9 +37,9 @@ const PresentationItem = () => {
               component="p" 
               sx={{mb:3}}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Dignissimos possimus repudiandae minima distinctio repellendus quae eius, harum odio assumenda modi
-               consequatur aperiam excepturi rerum quibusdam optio sequi provident delectus necessitatibus.
+              Il est toujours préférable de bien vérifier et entretenir les matériels de tuyauterie.
+              C'est pour cela que mise à part la réparation, nous faisons aussi la vérification de tous 
+              vos cannalisations car plus on attends la réparation, plus les coûts vont être énormes.
 
           </Typography>
 
@@ -49,9 +49,11 @@ const PresentationItem = () => {
               component="p" 
               sx={{mb:3}}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Dignissimos possimus repudiandae minima distinctio repellendus quae eius, harum odio assumenda modi
-               consequatur aperiam excepturi rerum quibusdam optio sequi provident delectus necessitatibus.
+              C'est de cette manière que nous intervenons dans tout type de réparation en plomberie. Nous 
+              réparons tout: les tuyaux classiques sous l'evier,tous les robinets en cuisine ou au salle de bain,
+              les baignoires et aussi les toilettes. Nous faisons tout les travaux dans les respects de l'art et avec 
+              professionnalisme.
+
 
           </Typography>
             {/* card info */}

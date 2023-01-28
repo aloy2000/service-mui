@@ -14,17 +14,17 @@ import Foire from '../FAQ/Foire'
 const devis = [ 
     {
       "id": 1,
-      "title": "gratuis",
-      "price":"$ 0"
+      "title": "Devis en ligne",
+      "price":"Gratuit"
     },
     {
       "id":2,
-      "title": "Example 2",
+      "title": "Frais de déplacement",
       "price":"$ 100"
     },
     {
       "id":3,
-      "title": "Exmple 3",
+      "title": "Main d'oeuvre",
       "price":"$ 300"
     },
 
@@ -53,7 +53,7 @@ const Prestation = () => {
                     component="div"
                     sx={{display:'flex',alignItems:'center',justifyContent:'center'}}
                   >
-                      Lizard morena
+                      Nos tarifs d'intervention.
                 </Typography>
                 <Typography
                     gutterBottom 
@@ -61,9 +61,9 @@ const Prestation = () => {
                     component="p" 
                     sx={{mb:3}}
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Dignissimos possimus repudiandae minima distinctio repellendus quae eius, harum odio assumenda modi
-                    consequatur aperiam excepturi rerum quibusdam optio sequi provident delectus necessitatibus.
+                    Vous cherchez un prix pour vos travaux et dépannages ?
+                    Voici nos tarifs avec des prix très raisonnables. Néanmoins ces prix peuvent 
+                    changer selon le cas rencontré.
 
                 </Typography>
                 {/* typedevis */}

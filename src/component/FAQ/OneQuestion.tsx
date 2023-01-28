@@ -34,7 +34,7 @@ const OneQuestion = () => {
                 <ListItemIcon>
                 <QuestionMarkIcon />
                 </ListItemIcon>
-                <ListItemText primary="What's your favourite ice?" />
+                <ListItemText primary="A combien de temps pouvez-vous intervenir ?" />
                 {open ? <ExpandLess /> : <ExpandMore />}
             </ListItemButton>
             <Collapse in={open} timeout="auto" unmountOnExit>
@@ -43,7 +43,7 @@ const OneQuestion = () => {
                     <ListItemIcon>
                     <QuestionAnswerIcon />
                     </ListItemIcon>
-                    <ListItemText primary="My Favorite ice is bala alalalal" />
+                    <ListItemText primary="Nous intervenons le plus rapidement possible " />
                 </ListItemButton>
                 </List>
             </Collapse>

@@ -18,7 +18,7 @@ const VilleIntervention = () => {
                 fontWeight:'bold'
             }}
 
-            >Title 
+            >Villes 
         </Typography>
         <Grid container spacing={3}>
             {villes.map(ville => (

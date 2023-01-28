@@ -30,7 +30,7 @@ const CardInfo = () => {
               pr: 3,
             }}
           >
-            Title
+            URGENCE
           </Typography>
           <Typography
             gutterBottom
@@ -38,10 +38,8 @@ const CardInfo = () => {
             component="p"
             sx={{ mb: 3, color: "#ff6f3c" }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            possimus repudiandae minima distinctio repellendus quae eius, harum
-            odio assumenda modi consequatur aperiam excepturi rerum quibusdam
-            optio sequi provident delectus necessitatibus.
+            Si vous avez besoin d'une intervention d'urgence, notre numéro est toujours disponible 24/24h pour recevoir votre appel.
+            Soyez sans crainte car nos intervenants seront chez vous dans les meilleurs délais possibles.
           </Typography>
         </CardContent>
 
