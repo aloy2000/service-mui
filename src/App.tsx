@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { ThemeProvider } from "@mui/material/styles";
+import { CssBaseline } from "@mui/material";
+import theme from "./theme/theme";
+import Navbar from "./component/Appbar/index";
+import NavInfo from "./component/Appbar/NavInfo";
+import Banner from "./component/Banner/Banner";
+import Footer from "./component/Footer/Footer";
+import Home from "./component/Home";
+import Prestation from "./component/prestation/Prestation";
+import ScrollTop from "./component/Scroll/ScrollTop";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Navbar />
+        <NavInfo />
+        <Banner />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/prestation/:id"  element={<Prestation />} />
+        </Routes>
+
+        <Footer />
+        <ScrollTop />
+      </ThemeProvider>
+    </>
   );
 }
 
