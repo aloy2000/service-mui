@@ -4,31 +4,41 @@ import { FooterContainer } from "./style";
 
 const footers = [
   {
-    title: "Company",
-    description: ["Team", "History", "Contact us", "Locations"],
-  },
-  {
-    title: "Features",
+    title: "SERVICE",
     description: [
-      "Cool stuff",
-      "Random feature",
-      "Team feature",
-      "Developer stuff",
-      "Another one",
+    " Notre entreprise vous offre le meilleur  des services parce que ",
+    " votre entière satisfaction et la perfection du travail sont notre priorité.",
+    "Nous éxécutons avec garantie notre travail dans les meilleurs délais avec des prix abordables.",
     ],
   },
   {
-    title: "Resources",
+    title: "Plomberie",
     description: [
-      "Resource",
-      "Resource name",
-      "Another resource",
-      "Final resource",
+      "Tuyauterie",
+      "Chauffe-eau",
+      "Robinets",
+      "Baignoire",
+      "Toilettes",
+      "Evier",
     ],
   },
   {
-    title: "Legal",
-    description: ["Privacy policy", "Terms of use"],
+    title: "Électricité",
+    description: [
+      "Interrupteurs",
+      "Les prises de courants",
+      "Les cisruits et autres branchements",
+    ],
+  },
+  {
+    title: "Serrurie",
+    description: [
+    "Portes", 
+    "Fenêtres",
+    "Baies vitrées",
+    "Vérandas",
+    "Verrières",
+  ],
   },
 ];
 

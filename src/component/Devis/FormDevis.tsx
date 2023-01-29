@@ -9,7 +9,6 @@ import {
   Checkbox,
   TextareaAutosize,
 } from "@mui/material";
-import IUser from "../../models/User";
 
 const FormDevis = () => {
   const [name, setName] = React.useState<string>();
@@ -43,7 +42,7 @@ const FormDevis = () => {
                   required
                   fullWidth
                   id="name"
-                  label="Nom et prenom"
+                  label="Nom et prénom"
                   autoFocus
                   value={name}
                   onChange={(e) => {
@@ -99,12 +98,12 @@ const FormDevis = () => {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      value="allowExtraEmails"
+                      value={check}
                       color="primary"
                       onChange={(e) => setCheck(e.target.value)}
                     />
                   }
-                  label="Rappelez."
+                  label="Être rappelé immédiatement."
                 />
               </Grid>
             </Grid>

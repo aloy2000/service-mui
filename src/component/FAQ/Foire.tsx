@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Container, List } from "@mui/material";
+import { Typography, Container } from "@mui/material";
 import OneQuestion from "./OneQuestion";
 const questions = [1, 2, 3, 4, 5, 6];
 const Foire = () => {
@@ -16,7 +16,7 @@ const Foire = () => {
             fontWeight: "bold",
           }}
         >
-          Foire Au Question
+          Foire Aux Questions
         </Typography>
         {questions.map((question) => (
           <div key={question} style={{ marginBottom: "10px" }}>

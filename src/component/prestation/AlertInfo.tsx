@@ -5,14 +5,13 @@ const AlertInfo = () =>{
     return (
         <>
             <Alert severity="error" sx={{my:3}}>
-                Lorem ipsum dolor lorem
-                Dignissimos possimus repudiandae minima distinctio repellendus quae eius, harum odio assumenda modi
-                    consequatur aperiam excepturi rerum quibusdam optio sequi provident delectus necessitatibus. 
+                Pour les <strong>interventions d'urgence</strong>, veuiller nous contacter directement via notre numéro mobile.
+                Une autre façon de nous contacter en urgence et de compléter le formulaire de demande de devis 
+                en cochant la case "Être rappelé immédiatement" et envoyer votre demande.
              </Alert>
              <Alert severity="warning" sx={{my:3}}>
-                Lorem ipsum dolor lorem
-                Dignissimos possimus repudiandae minima distinctio repellendus quae eius, harum odio assumenda modi
-                    consequatur aperiam excepturi rerum quibusdam optio sequi provident delectus necessitatibus. 
+                Les délais d'intervention peuvent varier selon votre localisation mais soyez-en sûr, nous interviendrons 
+                dans les plus meilleurs des délais pour vous satisfaire à la réparation et à la vérification de vos équipements.
              </Alert>
         </>
     )

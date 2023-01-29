@@ -1,11 +1,7 @@
 import React from "react";
 import {
-  AppBar,
-  Toolbar,
-  Typography,
   Button,
   Card,
-  IconButton,
 } from "@mui/material";
 import { NavInfoContainer, SocialProvider } from "./style";
 import { Facebook, Instagram } from "@mui/icons-material";

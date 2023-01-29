@@ -12,7 +12,7 @@ import React from "react";
 const Intervention = [
   {
     value: "electricien",
-    label: "Electricien",
+    label: "Électricien",
   },
   {
     value: "plombier",

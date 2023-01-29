@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import ListSubheader from "@mui/material/ListSubheader";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import StarBorder from "@mui/icons-material/StarBorder";
 import Collapse from "@mui/material/Collapse";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 
@@ -30,7 +28,7 @@ const OneQuestion = () => {
           <ListItemIcon>
             <QuestionMarkIcon />
           </ListItemIcon>
-          <ListItemText primary="What's your favourite ice?" />
+          <ListItemText primary="A combien de temps pouvez-vous intervenir ?" />
           {open ? <ExpandLess /> : <ExpandMore />}
         </ListItemButton>
         <Collapse in={open} timeout="auto" unmountOnExit>
@@ -39,7 +37,7 @@ const OneQuestion = () => {
               <ListItemIcon>
                 <QuestionAnswerIcon />
               </ListItemIcon>
-              <ListItemText primary="My Favorite ice is bala alalalal" />
+              <ListItemText primary="Nous intervenons le plus rapidement possible " />
             </ListItemButton>
           </List>
         </Collapse>

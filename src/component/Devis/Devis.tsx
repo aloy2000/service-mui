@@ -31,7 +31,7 @@ const Devis = () => {
             fontWeight: "bold",
           }}
         >
-          Lorem ipsum dorem lortem Lorem ipsum dolor sit,
+          Nous faisons vos devis ou interventions d'urgence en plomberie, éléctricité et serrurie.
         </Typography>
         {/* {paragraph 1} */}
         <Grid container spacing={3}>
@@ -44,27 +44,26 @@ const Devis = () => {
           </Grid>
           <Grid item md={5} sm={4} sx={{ mt: 8 }}>
             <Typography gutterBottom variant="body2" component="h2">
-              Lorem ipsum dolor sit amet consectetur
+              Avez-vous besoin d'une intervention d'<strong>urgence</strong> d'un expert en plomberie, éléctricité 
+              ou serrurie ?
             </Typography>
             <Typography gutterBottom variant="body2" component="p">
-              Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Nesciunt adipisci praesentium
-              aperiam amet numquam rep Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Cupiditate, vel porro architecto corporis
-              voluptas distinctio, magni molestias ad possimus mollitia eum iure
-              beatae eaque odio quo, eveniet dolor sint. Distinctio.
+              Pour une intervention d'urgence, vous n'avez qu'à cocher la case être rappelé immédiatement.
+              Après la complétion de votre demande, merci de bien détailler le plus possible vos 
+              problème.
             </Typography>
 
             {/* {paragraph 2} */}
 
             <div style={{ marginTop: "20px" }}>
               <Typography gutterBottom variant="body2" component="h2">
-                Lorem ipsum dolor sit amet consectetur
+              Besoin d'une intervention d'un artisan qualifié pour votre
+              serrurerie, plomberie ou électricité ?
               </Typography>
               <Typography gutterBottom variant="body2" component="p">
-                Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Nesciunt adipisci praesentium
-                aperiam amet numquam rep
+              Pour une intervention simple, nous vous demandons de remplir le formulaire suivant en y 
+              insérant les informations demandées pour qu'on intervienne chez vous dans les meilleurs délais. 
+              Veuillez détailler les problèmes rencontrés.
               </Typography>
             </div>
           </Grid>

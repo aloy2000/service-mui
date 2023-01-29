@@ -31,7 +31,7 @@ const MobileAppBar = () => {
   //         "path": "/contact"
   //     }
   // ]
-  const pages = ["Home", "Services", "Contact"];
+  //const pages = ["Home", "Services", "Contact"];
   const [anchorElNav, setAnchorElNav] = useState<any>(null);
 
   // const handleOpenNavMenu = (event) => {
@@ -70,7 +70,7 @@ const MobileAppBar = () => {
                 justifyContent: "center",
               }}
             >
-              Photos
+              Logo
             </Typography>
 
             {/* ABOUT, PROJECTS, CONTACT - small screen */}

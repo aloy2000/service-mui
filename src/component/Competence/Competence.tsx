@@ -1,11 +1,10 @@
 import React from "react";
-import { CardCompetence, CardActionContent } from "./style";
+import { CardCompetence } from "./style";
 import {
   Container,
   Card,
   Typography,
   CardContent,
-  CardActionArea,
   CardMedia,
   Grid,
   Button,
@@ -13,11 +12,11 @@ import {
 } from "@mui/material";
 import ImgCard from "../../assets/img/banners-homepage.png";
 
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Competence = () => {
   const navigate = useNavigate();
-  const competences = [0, 1, 2];
+  const competences = ["Plomberie", "Serrurerie", "Électricité"];
 
   // const checkPrestation = (c) => {
   //     navigate(`/prestation/${c}`)
@@ -49,7 +48,7 @@ const Competence = () => {
                       component="img"
                       height="140"
                       image={ImgCard}
-                      alt="green iguana"
+                      alt="Nos competences"
                     />
                     <CardContent>
                       <Typography
@@ -62,7 +61,7 @@ const Competence = () => {
                           justifyContent: "center",
                         }}
                       >
-                        Lizard
+                        {c}
                       </Typography>
                     </CardContent>
                     <CardActions
