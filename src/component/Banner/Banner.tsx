@@ -8,19 +8,27 @@ const Banner = () => {
     <>
       <BannerSection>
         <BannerItem>
-          <Typography component="p" sx={{ mb: 4 }} variant="h6">
-            Êtes-vous à la recherche d'un professionnel en
-            <strong> Plomberie</strong>, en <strong>Serrurie</strong> ou en{" "}
-            <strong>Electricité</strong> ?
+          <Typography
+            component="p"
+            sx={{ mb: 4, color: "white", fontWeight: 700 }}
+            variant="h1"
+          >
+            Bienvenue
+            {/* <strong> Plomberie</strong>, en <strong>Serrurie</strong> ou en{" "}
+            <strong>Electricité</strong> ? */}
           </Typography>
-          <Typography component="p" sx={{ mb: 4 }} variant="h6">
+          <Typography component="p" sx={{ mb: 4, color: "white" }} variant="h6">
             Vous êtes le bienvenu et au bon endroit, en effet nous faisons tout
             travaux dans ces domaines à un prix très raisonnable et un service
             plus que parfait.
           </Typography>
-          <Button variant="contained" sx={{ Color: "#f5f5f5" }}>
-            {" "}
-            En savoir plus{" "}
+          <Button
+            variant="contained"
+            sx={{ Color: "white", borderColor: "white", fontWeight: 700 }}
+            size="large"
+            color="secondary"
+          >
+            En savoir plus
           </Button>
         </BannerItem>
       </BannerSection>

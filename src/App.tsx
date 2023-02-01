@@ -4,7 +4,6 @@ import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import theme from "./theme/theme";
 import Navbar from "./component/Appbar/index";
-import NavInfo from "./component/Appbar/NavInfo";
 import Banner from "./component/Banner/Banner";
 import Footer from "./component/Footer/Footer";
 import Home from "./component/Home";
@@ -18,7 +17,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Navbar />
-        <NavInfo />
+        {/* <NavInfo /> */}
         <Banner />
 
         <Routes>

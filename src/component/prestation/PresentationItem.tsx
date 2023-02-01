@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, CardMedia, Container } from "@mui/material";
 import { PrestationDetails } from "./style";
 import { useParams } from "react-router-dom";
-import Img from "../../assets/img/banners-homepage.png";
+import Img from "../../assets/img/banners-homepage.jpg";
 import CardInfo from "./CardInfo";
 const PresentationItem = () => {
   const params = useParams();

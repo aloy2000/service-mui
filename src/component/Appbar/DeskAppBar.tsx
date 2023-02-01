@@ -35,7 +35,7 @@ const DeskAppBar = () => {
               variant="h6"
               sx={{ ml: 3 }}
             >
-              Services{" "}
+              Services
             </Typography>
             <Typography
               onClick={() => handleClickView("contact")}
