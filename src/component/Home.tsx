@@ -6,9 +6,13 @@ import Devis from "./Devis/Devis";
 import { Expertise } from "./Expertise/Expertise";
 import { Container } from "@mui/material";
 import { Contact } from "./Contact/Contact";
+
 //import Footer from './Footer/Footer'
 
 const Home = () => {
+  const [visible, setVisible] = React.useState(false);
+
+
   return (
     <Container>
       <About />

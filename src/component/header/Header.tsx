@@ -14,9 +14,11 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { DrawerComp } from "./DrawerComp";
+import { useNavigate } from "react-router-dom";
 export const Header = () => {
   const theme = useTheme();
   const smallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const navigate = useNavigate();
   const [valueOfLink, setValueOfLink] = React.useState(0);
 
   function handleClickView(id: string) {
@@ -48,7 +50,7 @@ export const Header = () => {
                 >
                   <Tab
                     label={"Accueil"}
-                    onClick={() => handleClickView("home")}
+                    onClick={() => navigate('/')}
                   />
                   <Tab
                     label={"A propos"}
