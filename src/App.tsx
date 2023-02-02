@@ -24,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/prestation/:id"  element={<Prestation />} />
         </Routes>
+
         <Footer />
         <ScrollTop />
       </ThemeProvider>
