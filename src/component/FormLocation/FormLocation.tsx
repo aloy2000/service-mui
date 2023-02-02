@@ -68,7 +68,19 @@ export const FormLocation = () => {
         }}
         sx={{ width: 300 }}
       />
-      <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          paddingRight: 3,
+          flexDirection: {
+            xs: "column",
+            sm: "row",
+          },
+          gap: 2,
+        }}
+      >
         <TextField
           id="postal"
           label="Code postal"
@@ -84,15 +96,12 @@ export const FormLocation = () => {
           }}
           sx={{ width: 300 }}
         />
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Button size="large" variant="contained" color="primary" onClick={handleSubmit}>
+        <Button
+          size="large"
+          variant="contained"
+          color="primary"
+          onClick={handleSubmit}
+        >
           Envoyer
         </Button>
       </Box>
