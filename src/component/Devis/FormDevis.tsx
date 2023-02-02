@@ -43,7 +43,6 @@ const FormDevis = () => {
                   fullWidth
                   id="name"
                   label="Nom et prénom"
-                  autoFocus
                   value={name}
                   onChange={(e) => {
                     setName(name);

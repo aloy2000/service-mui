@@ -62,7 +62,10 @@ export const Header = () => {
                     label={"Contact"}
                     onClick={() => handleClickView("contact")}
                   />
-                  <Tab label={"Devis"} onClick={() => handleClickView("devis")} />
+                  <Tab
+                    label={"Devis"}
+                    onClick={() => handleClickView("devis")}
+                  />
                   {/* <Tab label={"A propos"} /> */}
                 </Tabs>
               </Grid>

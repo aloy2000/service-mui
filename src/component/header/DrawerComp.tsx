@@ -1,35 +1,62 @@
 import React from "react";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import { IconButton, Drawer, List } from "@mui/material";
-import { MenuListItem } from "./MenuListItem";
+import {
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
 
 export const DrawerComp = () => {
   const [open, setOpen] = React.useState(false);
 
-  const updateOpen = (id:string) => {
-    const target = document.getElementById(id);
-    console.log()
-    target?.scrollIntoView({ behavior: "smooth", block: "start" });
-    setOpen(false);
+  const handleClick = () => {
+    setOpen(!open);
   };
 
   return (
     <>
-      <Drawer
-        PaperProps={{
-          sx: { backgroundColor: "rgba(9,9,121,1)" },
-        }}
-        open={open}
-        onClose={() => setOpen(false)}
-      >
+      <Drawer open={open} onClose={() => setOpen(false)}>
         <List>
-          <MenuListItem name="Accueil" updateOpen={updateOpen} id="home" />
-          <MenuListItem name="A props" updateOpen={updateOpen} id="about" />
-          <MenuListItem name="Nos Services" updateOpen={updateOpen} id="service" />
-          <MenuListItem name="Contact" updateOpen={updateOpen} id="contact"/>
+          <ListItem
+            component="a"
+            href="#home"
+            onClick={() => {
+              handleClick();
+            }}
+          >
+            <ListItemText primary="Accueil" />
+          </ListItem>
+          <ListItem
+            component="a"
+            href="#about"
+            onClick={() => {
+              handleClick();
+            }}
+          >
+            <ListItemText primary="A propos" />
+          </ListItem>
+          <ListItem
+            component="a"
+            href="#service"
+            onClick={() => {
+              handleClick();
+            }}
+          >
+            <ListItemText primary="Service" />
+          </ListItem>
+          <ListItem
+            component="a"
+            href="#contact"
+            onClick={() => {
+              handleClick();
+            }}
+          >
+            <ListItemText primary="Contact" />
+          </ListItem>
         </List>
       </Drawer>
-
       <IconButton
         sx={{ marginLeft: "auto", color: "white" }}
         onClick={() => {
