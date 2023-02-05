@@ -15,6 +15,9 @@ export const DevisCard = styled("div")(({ theme }) => ({
 }));
 
 export const PriceDevis = styled("div")(({ theme }) => ({
-  backgroundColor: "red",
+  backgroundColor: "#178582",
   borderRadius: "9px",
+  color: 'white',
+  width: '30%',
+
 }));

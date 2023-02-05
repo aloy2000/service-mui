@@ -27,13 +27,12 @@ const NavInfo = () => {
             <Button
               variant="outlined"
               sx={{
-                justifyContent: "flex-end",
                 backgroundColor: "#fff",
                 mr: 6,
                 "&:hover": { backgroundColor: "#fff" },
               }}
             >
-              0334556677
+              +334556677
             </Button>
             <Facebook sx={{ color: "white", mt: 1, mr: 6 }} />
             <Instagram sx={{ color: "white", mt: 1, mr: 6 }} />

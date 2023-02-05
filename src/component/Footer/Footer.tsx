@@ -6,9 +6,9 @@ const footers = [
   {
     title: "SERVICE",
     description: [
-    " Notre entreprise vous offre le meilleur  des services parce que ",
-    " votre entière satisfaction et la perfection du travail sont notre priorité.",
-    "Nous éxécutons avec garantie notre travail dans les meilleurs délais avec des prix abordables.",
+      " Notre entreprise vous offre le meilleur  des services parce que ",
+      " votre entière satisfaction et la perfection du travail sont notre priorité.",
+      "Nous éxécutons avec garantie notre travail dans les meilleurs délais avec des prix abordables.",
     ],
   },
   {
@@ -22,6 +22,17 @@ const footers = [
       "Evier",
     ],
   },
+
+  {
+    title: "Serrurie",
+    description: [
+      "Portes",
+      "Fenêtres",
+      "Baies vitrées",
+      "Vérandas",
+      "Verrières",
+    ],
+  },
   {
     title: "Électricité",
     description: [
@@ -30,36 +41,12 @@ const footers = [
       "Les cisruits et autres branchements",
     ],
   },
-  {
-    title: "Serrurie",
-    description: [
-    "Portes", 
-    "Fenêtres",
-    "Baies vitrées",
-    "Vérandas",
-    "Verrières",
-  ],
-  },
 ];
 
 function Copyright(props: any) {
   return (
-    <Typography
-      variant="body2"
-      sx={{ color: "white" }}
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      'Copyright ©
-      <Link
-        color="inherit"
-        href="https://mui.com/"
-        sx={{ textDecoration: "none" }}
-      >
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
+    <Typography sx={{ color: "white" }} align="center">
+      Copyright © Your Website - 2023{" "}
     </Typography>
   );
 }
@@ -86,7 +73,6 @@ const Footer = () => {
                 {footer.description.map((item) => (
                   <Typography
                     key={item}
-                    variant="body2"
                     sx={{ color: "#fff", cursor: "pointer", display: "block" }}
                   >
                     {item}

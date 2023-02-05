@@ -1,11 +1,11 @@
-import { Grid, Typography, Container } from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
 import FormDevis from "./FormDevis";
 import ReactPlayer from "react-player";
 
 const Devis = () => {
   return (
     <div id="devis">
-      <Container sx={{ mt: 20 }}>
+      <Box sx={{ mt: 20 }}>
         {/* {title} */}
         <Typography
           variant="h4"
@@ -59,7 +59,7 @@ const Devis = () => {
             <FormDevis />
           </Grid>
         </Grid>
-      </Container>
+      </Box>
     </div>
   );
 };

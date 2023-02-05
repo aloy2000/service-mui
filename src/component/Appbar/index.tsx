@@ -1,4 +1,5 @@
 import { Header } from "../header/Header";
+import NavInfo from "./NavInfo";
 
 const Navbar = () => {
 //   const theme = useTheme();
@@ -6,6 +7,7 @@ const Navbar = () => {
   return (
     <>
       {/* {matches ? <Header/> :<Header />} */}
+      <NavInfo />
       <Header />
     </>
   );

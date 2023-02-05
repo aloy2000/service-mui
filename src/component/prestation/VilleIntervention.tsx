@@ -1,14 +1,14 @@
 import React from "react";
-import { Container, Typography, Grid, Box, Card } from "@mui/material";
+import { Typography, Grid, Box, Card, Container } from "@mui/material";
 import CardVille from "./CardVille";
 
 const villes = ["ville1", "Ville2", "ville3", "ville4"];
 
 const VilleIntervention = () => {
   return (
-    <>
-      <Container sx={{ mt: 7 }}>
-        <Card>
+    <Container>
+      <Box sx={{ mt: 7 }}>
+        <Card sx={{ backgroundColor: "#ECF5F6" }}>
           <Box padding={5}>
             <Typography
               variant="h4"
@@ -31,8 +31,8 @@ const VilleIntervention = () => {
             </Grid>
           </Box>
         </Card>
-      </Container>
-    </>
+      </Box>
+    </Container>
   );
 };
 

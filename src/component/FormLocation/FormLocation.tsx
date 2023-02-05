@@ -78,7 +78,6 @@ export const FormLocation = () => {
             xs: "column",
             sm: "row",
           },
-          gap: 2,
         }}
       >
         <TextField

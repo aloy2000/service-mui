@@ -7,7 +7,7 @@ import {
   Button,
   CardActions,
   Box,
-  Fab,
+  Container,
 } from "@mui/material";
 import { DevisList, PrestationContainer } from "./style";
 import AlertInfo from "./AlertInfo";
@@ -16,7 +16,11 @@ import PrestationList from "./PrestationList";
 import PresentionItem from "./PresentationItem";
 import VilleIntervention from "./VilleIntervention";
 import Foire from "../FAQ/Foire";
-import { Call } from "@mui/icons-material";
+import { Contact } from "../Contact/Contact";
+import Devis from "../Devis/Devis";
+import Review from "../Review/Review";
+
+const numberOfAvis = [0, 1, 2, 3];
 
 const devis = [
   {
@@ -42,7 +46,7 @@ const Prestation = () => {
 
   return (
     <Box>
-      <PrestationContainer sx={{ mt: 4 }}>
+      <PrestationContainer sx={{ mt: 10 }}>
         <Grid container spacing={4}>
           <Grid item xs={12}>
             <PresentionItem />
@@ -57,7 +61,9 @@ const Prestation = () => {
             >
               <Card
                 sx={{
-                  width: "30%",
+                  padding: 5,
+                  width: "90%",
+                  backgroundColor: "#ECF5F6",
                 }}
               >
                 <CardContent>
@@ -73,12 +79,7 @@ const Prestation = () => {
                   >
                     Nos tarifs d'intervention.
                   </Typography>
-                  <Typography
-                    gutterBottom
-                    variant="body2"
-                    component="p"
-                    sx={{ mb: 3 }}
-                  >
+                  <Typography gutterBottom component="p" sx={{ mb: 3 }}>
                     Vous cherchez un prix pour vos travaux et dépannages ? Voici
                     nos tarifs avec des prix très raisonnables. Néanmoins ces
                     prix peuvent changer selon le cas rencontré.
@@ -101,7 +102,9 @@ const Prestation = () => {
                     justifyContent: "center",
                   }}
                 >
-                  <Button variant="contained">Demander Devis</Button>
+                  <Button variant="contained" color="primary">
+                    Demander Devis
+                  </Button>
                 </CardActions>
               </Card>
             </Box>
@@ -118,6 +121,31 @@ const Prestation = () => {
         <VilleIntervention />
       </PrestationContainer>
       <Foire />
+      <Container>
+        <Contact />
+        <Devis />
+        <Typography
+          variant="h4"
+          sx={{ fontWeight: 700, marginBottom: 3, marginTop: 10 }}
+          align="center"
+        >
+          Les avis de nos clients
+        </Typography>
+        <Grid container spacing={3}>
+          {numberOfAvis.map(function () {
+            return (
+              <Review
+                serviceTitle="Reparation pompe"
+                username="Christine Marie"
+                fonction="fonction"
+                date="22 Mai 2022"
+                comment="Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love"
+                avatar="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg"
+              />
+            );
+          })}
+        </Grid>
+      </Container>
       <Box
         sx={{
           position: "fixed",
@@ -131,21 +159,7 @@ const Prestation = () => {
           },
           gap: 2,
         }}
-      >
-        <Card>
-          <Box width={260} padding={2}>
-            <Typography>
-              Si vous avez besoin d'une intervention d'urgence, notre numéro est
-              toujours disponible 24/24h pour recevoir votre appel. Soyez sans
-              crainte car nos intervenants seront chez vous dans les meilleurs
-              délais possibles.
-            </Typography>
-          </Box>
-        </Card>
-        <Fab>
-          <Call />
-        </Fab>
-      </Box>
+      ></Box>
     </Box>
   );
 };

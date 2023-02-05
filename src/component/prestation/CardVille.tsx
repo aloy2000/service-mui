@@ -12,15 +12,15 @@ const CardVille = ({ ville }: Iprops) => {
           mb: 2,
           boxShadow: "none",
           borderRadius: 10,
-          bgcolor: "transparent",
-          border: "solid 1px gray",
+          bgcolor: "white",
+          border: "solid 1px white",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
         <DevisCard>
           <LocationCity />
-          <Typography variant="body2" component="p">
-            {ville}
-          </Typography>
+          <Typography component="p">{ville}</Typography>
         </DevisCard>
       </Card>
     </>

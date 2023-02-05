@@ -7,6 +7,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import { Typography } from "@mui/material";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -53,17 +54,23 @@ export default function TablePrestation() {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Nos prestations de plomberie</StyledTableCell>
-            <StyledTableCell>Type de dépannage de plomberie</StyledTableCell>
+            <StyledTableCell variant="head">
+              <Typography>Nos prestations de plomberie</Typography>
+            </StyledTableCell>
+            <StyledTableCell variant="head">
+              <Typography>Type de dépannage de plomberie</Typography>
+            </StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name}>
               <StyledTableCell component="th" scope="row">
-                {row.name}
+                <Typography>{row.name}</Typography>
               </StyledTableCell>
-              <StyledTableCell>{row.name}</StyledTableCell>
+              <StyledTableCell>
+                <Typography>{row.name}</Typography>
+              </StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

@@ -29,14 +29,11 @@ export const  LogoNav = styled(Typography)(({ theme }) => ({
 }));
 
 export const NavInfoContainer = styled(AppBar)(({ theme }) => ({
-    height: '36px',
-    marginTop:'63px',
     
-    backgroundColor: 'transparent',
+    // backgroundColor: 'transparent',
     button:{
         padding: theme.spacing(0,1)
     }
-
 }));
 
 

@@ -12,32 +12,29 @@ const CardInfo = () => {
     <>
       <Card
         sx={{
-          backgroundColor: "#ffcab0",
-          opacity: "0.7",
-          my: 3,
+          backgroundColor: "#ECF5F6",
+          opacity: "0.9",
+          mb: 10,
+          mt: 10,
           border: "no-border",
         }}
       >
         <CardContent sx={{ p: 2, m: 2 }}>
           <Typography
             gutterBottom
-            variant="h5"
+            variant="h4"
             component="div"
             sx={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               pr: 3,
+              color: '#281918'
             }}
           >
             URGENCE
           </Typography>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="p"
-            sx={{ mb: 3, color: "#ff6f3c" }}
-          >
+          <Typography gutterBottom component="p" sx={{ color: "#281918" }}>
             Si vous avez besoin d'une intervention d'urgence, notre numéro est
             toujours disponible 24/24h pour recevoir votre appel. Soyez sans
             crainte car nos intervenants seront chez vous dans les meilleurs
@@ -52,12 +49,9 @@ const CardInfo = () => {
             justifyContent: "center",
           }}
         >
-          <Button
-            variant="contained"
-            sx={{ backgroundColor: "red", fontWeight: "bold" }}
-          >
+          <Button variant="contained" sx={{ fontWeight: "bold", marginBottom: 2 }}>
             <Call />
-            038 45 678 90
+            +1 38 45 678 90
           </Button>
         </CardActions>
       </Card>

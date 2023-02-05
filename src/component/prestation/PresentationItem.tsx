@@ -8,11 +8,11 @@ const PresentationItem = () => {
   const params = useParams();
   return (
     <>
-      <Container>
+      <Container sx={{ marginButton: 40 }}>
         <PrestationDetails>
           {/* {title } */}
           <Typography
-            variant="h5"
+            variant="h4"
             component="h1"
             sx={{ mb: 3, fontWeight: "bold" }}
           >
@@ -32,14 +32,14 @@ const PresentationItem = () => {
           </div>
           {/* subtitle */}
           <Typography
-            variant="h6"
+            variant="h4"
             component="h3"
             sx={{ my: 3, fontWeight: "bold" }}
           >
             Prestation {params.id}
           </Typography>
           {/* {Description} */}
-          <Typography variant="body2" component="p" sx={{ mb: 3 }}>
+          <Typography component="p" sx={{ mb: 3 }}>
             Il est toujours préférable de bien vérifier et entretenir les
             matériels de tuyauterie. C'est pour cela que mise à part la
             réparation, nous faisons aussi la vérification de tous vos
@@ -47,7 +47,7 @@ const PresentationItem = () => {
             vont être énormes.
           </Typography>
 
-          <Typography variant="body2" component="p" sx={{ mb: 3 }}>
+          <Typography component="p" sx={{ mb: 3 }}>
             C'est de cette manière que nous intervenons dans tout type de
             réparation en plomberie. Nous réparons tout: les tuyaux classiques
             sous l'evier,tous les robinets en cuisine ou au salle de bain, les

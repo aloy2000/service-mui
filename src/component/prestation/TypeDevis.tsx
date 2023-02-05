@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Typography, Grid } from "@mui/material";
-import { DevisCard, PriceDevis } from "./style";
+import { DevisCard } from "./style";
 
 const TypeDevis = ({ title, price }: IProps) => {
   return (
@@ -8,16 +8,12 @@ const TypeDevis = ({ title, price }: IProps) => {
       <Card sx={{ height: "40px", mb: 2 }}>
         <DevisCard>
           <Grid container spacing={2}>
-            <Grid item xs={9} sm={9} md={9}>
-              <Typography variant="body2" component="p">
-                {title}{" "}
-              </Typography>
+            <Grid item xs={6} sm={9} md={9}>
+              <Typography component="p">{title}</Typography>
             </Grid>
 
-            <Grid item xs={3} sm={3} md={3}>
-              <PriceDevis>
+            <Grid item xs={6} sm={3} md={2}>
                 <Typography
-                  variant="body2"
                   component="p"
                   sx={{
                     ml: 1,
@@ -25,7 +21,6 @@ const TypeDevis = ({ title, price }: IProps) => {
                 >
                   {price}
                 </Typography>
-              </PriceDevis>
             </Grid>
           </Grid>
         </DevisCard>

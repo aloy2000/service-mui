@@ -59,7 +59,7 @@ export const CustomizeCard = ({ title, icon }: IProps) => {
         >
           <Typography
             variant="h5"
-            onClick={() => navigate(`/prestation/${title}`)}
+            onClick={() => navigate(`/electricite`)}
             className={classes.linkHover}
             
           >

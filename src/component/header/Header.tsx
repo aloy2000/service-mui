@@ -14,6 +14,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { DrawerComp } from "./DrawerComp";
+import { useNavigate } from "react-router-dom";
 export const Header = () => {
   const theme = useTheme();
   const smallScreen = useMediaQuery(theme.breakpoints.down("sm"));
@@ -24,8 +25,11 @@ export const Header = () => {
     target?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  const navigate = useNavigate()
+
   return (
     <>
+      
       <AppBar>
         <Toolbar>
           {smallScreen ? (
@@ -48,7 +52,7 @@ export const Header = () => {
                 >
                   <Tab
                     label={"Accueil"}
-                    onClick={() => handleClickView("home")}
+                    onClick={() => navigate("/")}
                   />
                   <Tab
                     label={"A propos"}

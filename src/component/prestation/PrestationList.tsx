@@ -4,29 +4,18 @@ import TablePrestation from "./TablePrestation";
 const PrestationList = () => {
   return (
     <>
-      <Container>
-        <Typography variant="h4" gutterBottom>
-          Plomberie
-        </Typography>
-
-        <Typography variant="body2" gutterBottom component="p">
-          La plomberie n'a aucun secret pour nous, quelque soit la presation
-          demandée, nous nous en occupons avec précision et professionnalisme.
-          Vous serez satisfaits de notre travail en un rien de temps et nous
-          vous garantissons un travail plus que parfait.
-        </Typography>
+      <Container sx={{ marginTop: 10 }}>
         <div style={{ marginTop: "40px" }}>
-          <Typography variant="h6" gutterBottom>
+          <Typography variant="h4" gutterBottom sx={{ marginButtom: 12 }}>
             Domaines d'intervention
           </Typography>
 
-          <Typography variant="body2" gutterBottom component="p">
+          <Typography gutterBottom>
             Nous exécutons tout travaux dans le domaine de plomberie, parmi ces
             travaux, voici un tableau contenant les services et les domaines que
             nous prenons en charge
           </Typography>
         </div>
-
         <TablePrestation />
       </Container>
     </>
